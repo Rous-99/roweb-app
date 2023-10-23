@@ -1,42 +1,288 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/*===========================FONTS=====================*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/*===========================VARIABLES CSS=====================*/
+:root{
+
+  /*··························FONTS·························*/
+  --body-font:"Hind",sans-serif;
+
+  /*··························FONTS SIZE·························*/
+  --normal-font-size:1rem; /*1 rem = 16px*/
+
+  /*··························COLORS·························*/
+
+  /*BOTH COLORS*/
+  --first-color:#e6aa9f;
+  --first-color-soft:#edbdb4;
+  --title-color-soft:#717171;
+
+  /*LIGHT COLORS*/
+
+  
+  --container-color:#FFF;
+  --body-color:#FFF;
+  --text-color: black;
+  --input-color: #ffe6e1; 
+ 
+
+  /*DARK COLORS*/
+  
+  /* --container-color: #282828;
+  --title-color:#fff;
+  --text-color:rgb(190, 190, 190);
+  --input-color:#4e4a49;
+  --body-color:#121212;  */
+ 
+  
+  --header-height: 60px;
+
+
+  /*··························FONTSIZE························*/
+  --big-font-size:2rem; /*32px*/
+  --h1-font-size:1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size:1.125rem;
+  --normal-font-size:1rem;
+  --small-font-size:0.8rem;
+  --smaller-font-size:0.75rem;
+
+  /*··························FONTWEIGHT························*/
+  --font-low:300;
+  --font-medium:400;
+  --font-semi-bold:600;
+  --font-bold:700;
+
+  /*··························Z INDEX························*/
+  --z-tooltip:10;
+  --z-fixed:100;
+  --z-modal:1000;
+
+}
+
+[data-theme='dark']{
+  --container-color: #282828;
+  --title-color:#fff;
+  --text-color:rgb(190, 190, 190);
+  --input-color:#4e4a49;
+  --body-color:#121212; 
+
+  --first-color:#e6aa9f;
+  --first-color-soft:#edbdb4;
+  --title-color-soft:#717171;
+}
+
+/* [data-theme='light']{
+  --container-color:#FFF;
+  --text-color: black;
+  --input-color: #ffe6e1; 
+} */
+
+/*===========================BASE=====================*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+.app{
+  background-color: var(--body-color);
+}
+
+h1,h2,h3,h4{
+  color:var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*===========================REUSABLE CLASSES=====================*/
+
+.container{
+  max-width: 768px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section{
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.section__title{
+  font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  letter-spacing: .2rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.section__title,
+.section__subtitle{
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* DARK THEME
+body.dark__theme{ */
+
+  /*COLORS*/
+  /* --hue-color:340; */
+
+  /* --first-color:hsl(var(var(--hue-color)), 69%, 61%); */
+  /* --first-color:#e6aa9f;
+  --first-color-soft:#edbdb4;
+  --input-color: #ffe6e1; */
+  /* --first-color-second:hsl(var(var(--hue-color)), 69%, 61%); */
+  /* --first-color-alt:hsl(var(var(--hue-color)), 57%, 53%); */
+
+  /* --first-color-soft:hsl(var(--hue-color), 30%, 8%); */
+
+  /* --title-color: #282828;
+  --title-color-soft:#717171; */
+
+  /* --text-color:hsl(var(var(--hue-color)), 8%, 45%);
+  --text-color-light:hsl(var(var(--hue-color)), 8%, 65%);
+  --input-color:hsl(var(var(--hue-color)), 70%, 96%);
+  --body-color:hsl(var(var(--hue-color)), 60%, 99%);
+  --container-color:#FFF; */
+  
+  /* --body-color: hsl(0 0% 98%);
+  --text-color: hsl(0 0% 46%);
+  --title-color:#9c9994;
+  --title-color-dark:#29251c;
+  --pink:#e7ddd3;
+  --soft-grey:#c0c2bd;
+  --pink:#e6aa9f; */
+  /* --header-height: 60px; */
+/* } */
+
+
+.theme__button{ /*modificar la altura del bottom con breakpoints para ajustarlo*/
+  position: fixed;
+  bottom: 3%;
+  right:10%;
+  z-index: var(--z-fixed);
+  border: none;
+  width: 10%;
+  background: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.change__theme{ 
+  width: max-content;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+
+.change__theme:hover{ /*intentar añadir una animacion de que se rellene la luna y al clickar se quede rosa*/
+  color: var(--first-color-soft);
+}
+
+.offline__bg{
+  background-color: #e6aa9f;
+}
+
+
+/*BREAKPINTS*/
+
+/*small devices*/
+@media screen and (max-width:350px){
+  .container{
+    max-width: 300px;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    margin: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+ 
+}
+
+/*medium devices*/
+@media screen and (min-width:568px){
+  /* .section__title{
+    /* margin-bottom: 1.5rem; */
+  
+}
+
+@media screen and (min-width:768px){
+  .container{
+    margin: 10px auto;
+    /* min-width: 768px; */
+    /* background-color: #edbdb4; */
+  }
+
+  body{
+    margin: 0;
+  }
+
+  section{
+    padding: 1rem 0 1rem;
+  }
+  
+  .section__title{
+    margin-bottom: 2rem;
+    font-size: var(--big-font-size);
+  }
+    
+  .theme__button{
+    top: 5%;
+    right: 0%;  
+    bottom: initial;
+  }
+  .change__theme{
+    margin: 0;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* FOR LARGE DEVICES */
+
+@media screen and (min-width:1024px){
+    .container{
+      max-width: 1000px;
+    }
+}
+
+@media screen and (min-width:968px){
+  :root{
+     /*··························FONTSIZE························*/
+      --big-font-size:3rem;
+      --h1-font-size:2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size:1.25rem;
+      --normal-font-size:1rem;
+      --small-font-size:0.875rem;
+      --smaller-font-size:0.8rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
