@@ -53,8 +53,8 @@ function App() {
     <div className='app'>
       <Header />
       <Home />
+      <About />
       <Skills />
-      {/* <About /> */}
     </div>
   
   )

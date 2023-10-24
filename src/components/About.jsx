@@ -24,9 +24,6 @@ const About = () => {
 
     return(
         <section className="about section" id="about">
-            <p>
-                SOY EL ABOUT COMPONENT
-            </p>
             <h2 className="section__title">
                 Sobre mí
             </h2>
