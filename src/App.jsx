@@ -35,20 +35,6 @@ function App() {
   // }
 
   return (
-    // <div className='app' data-theme={theme}>
-    //   <Header />
-    //   <Home />
-    //   <About />
-    //   <Skills />
-    //   <Education />
-    //   <Portfolio />
-    //   <Form />
-    //   <Footer />
-    //   <Scroll />
-    //   <button className='theme__button' onClick={switchTheme}>{darkMode ? (<i className="uil uil-moon change__theme" id="theme__button" onClick={() => setDarkMode(!darkMode)} ></i>): (<i className="uil uil-sun change__theme" id="theme__button"onClick={() => setDarkMode(!darkMode)}></i>)}
-    //   </button>
-    // </div>
-
     <div className='app' data-theme={theme}>
       <Header />
       <Home />
@@ -67,4 +53,4 @@ function App() {
 
 export default App
 
-// navigator.serviceWorker.register('./sw.js');
+navigator.serviceWorker.register('./sw.js');
