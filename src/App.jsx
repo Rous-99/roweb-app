@@ -7,7 +7,7 @@ import Skills from './components/Skills.jsx';
 import Education from './components/Education.jsx';
 import Portfolio from './components/Portfolio.jsx';
 // import Form from './components/Form.jsx';
-// import Footer from './components/Footer.jsx';
+import Footer from './components/Footer.jsx';
 // import Scroll from './components/Scroll.jsx';
 import useLocalStorage from 'use-local-storage';
 
@@ -57,6 +57,7 @@ function App() {
       <Skills />
       <Education />
       <Portfolio />
+      <Footer />
     </div>
   
   )
