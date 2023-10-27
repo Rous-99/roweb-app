@@ -53,4 +53,4 @@ function App() {
 
 export default App
 
-navigator.serviceWorker.register('./sw.js');
+navigator.serviceWorker.register('/sw.js');
