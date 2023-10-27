@@ -60,6 +60,19 @@
     margin: 0 auto;
 }
 
+.message__active{
+    margin-top: 1.5rem;
+    display: block;
+    text-align: center;
+    animation: ease-in-out 2s;
+    color: var(--title-color);
+}
+
+.message__hidden{
+    display: none;
+}
+
+
 @media screen and (max-width:350px){
     .contact__button{
         width: 180px;

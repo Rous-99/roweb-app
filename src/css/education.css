@@ -38,6 +38,7 @@
 
 .education__subtitle{
     display: inline-block;
+    color: var(--text-color);
     font-size: var(--small-font-size);
     margin-bottom: 1rem;
 }

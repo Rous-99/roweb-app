@@ -31,6 +31,7 @@ const Contact = (props) => {
     };
 
     const [values, setValues] = useState(initialStateValues);
+    const [message, setMessage] = useState(false);
 
     const handleInputChange = (e) => {
         const {name , value} = e.target;
@@ -43,6 +44,7 @@ const Contact = (props) => {
         e.preventDefault();
         // console.log(values);
         props.addMessage(values);
+        setMessage(true);
     }
 
 
@@ -64,7 +66,7 @@ const Contact = (props) => {
                         <i className="uil uil-envelope contact__icon"></i>
                         <div>
                             <h3 className="contact__title">Email</h3>
-                            <span className="contact__subtitle">rowebdesign99@gmail.com</span>
+                            <span className="contact__subtitle">info@rowebdesign.es</span>
                         </div>
                     </div>
 
@@ -92,7 +94,11 @@ const Contact = (props) => {
                         </div>
                         <button type="submit" className="button button--flex contact__button">Enviar mensaje <i className="uil uil-message button__icon"></i></button>
                     </div>
+                    <div className={message ? "message__active": "message__hidden"}>
+                        <p><i className="uil uil-check-circle"></i> Mensaje enviado con éxito</p>
+                    </div>
                 </form>
+                
             </div>
         </section>
     )
