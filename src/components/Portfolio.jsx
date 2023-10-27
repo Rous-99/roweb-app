@@ -49,8 +49,8 @@ const Portfolio = () => {
                     <SwiperSlide className="portfolio__content grid">
                         <img src={PetloversImg} alt="" className="portfolio__img" />
                         <div className="portfolio__data">
-                            <h3 className="portfolio__title">TITULO DEL PROYECTO</h3>
-                            <p className="portfolio__description">DESCRIBIR EL PROYECTO</p>
+                            <h3 className="portfolio__title">PET LOVERS</h3>
+                            <p className="portfolio__description">Página web con API integrada</p>
                             <button className="portfolio__button" onClick={() => toggleTab(1)}>Ver <i className="uil uil-arrow-right portfolio__button-icon"></i></button>
                         </div>
                     </SwiperSlide>
@@ -62,7 +62,14 @@ const Portfolio = () => {
                                 <i className='bx bxs-dog icon__project'></i> PET LOVERS 
                                 </h3>
                                 <p className="portfolio__project-description">
-                                    DESCRIPCION CONTENEDOR 1
+                                    Pet Lover es una página web sobre una asociación de adopción de perros en Texas. <br/>
+
+                                    Dentro de la propia página podemos consultar todos los perros disponibles para adoptar, utilizar
+                                    filtros para encontrar el perro más acorde a nuestros gustos y necesidades y obtener más
+                                    información sobre ellos.<br/>
+
+                                    Además, a través de un formulario podemos enviar nuestros datos y los del
+                                    perro que deseamos adoptar.
                                 </p>
                                 <a href="https://rous-99.github.io/petlover/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>
@@ -72,7 +79,7 @@ const Portfolio = () => {
                         <img src={SeaschoolImg} alt="" className="portfolio__img" />
                         <div className="portfolio__data">
                             <h3 className="portfolio__title">SEA SCHOOL</h3>
-                            <p className="portfolio__description">DESCRIBIR EL PROYECTO</p>
+                            <p className="portfolio__description">Landing Page</p>
                             <button className="portfolio__button" onClick={() => toggleTab(2)}>Ver <i className="uil uil-arrow-right portfolio__button-icon"></i></button>
                         </div>
                     </SwiperSlide>
@@ -84,7 +91,7 @@ const Portfolio = () => {
                                 <i className='bx bx-water icon__project'></i> SEA SCHOOL
                                 </h3>
                                 <p className="portfolio__project-description">
-                                    DESCRIPCION CONTENEDOR 2
+                                    SeaSchool es una landing page sobre una escuela de vela en la que se pueden consultar las diferentes actividades que ofrecen, sus características, los precios, e incluso reservar para las clases a través de un formulario.
                                 </p>
                                 <a href="https://rous-99.github.io/pagina-surf/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>
@@ -93,8 +100,10 @@ const Portfolio = () => {
                     <SwiperSlide className="portfolio__content grid">
                         <img src={AgendaImg} alt="" className="portfolio__img" />
                         <div className="portfolio__data">
-                            <h3 className="portfolio__title">TITULO DEL PROYECTO</h3>
-                            <p className="portfolio__description">DESCRIBIR EL PROYECTO</p>
+                            <h3 className="portfolio__title">AGENDA CON PYTHON</h3>
+                            <p className="portfolio__description">
+                                Agenda de contactos con Tkinter
+                            </p>
                             <button className="portfolio__button" onClick={() => toggleTab(3)}>Ver <i className="uil uil-arrow-right portfolio__button-icon"></i></button>
                         </div>
                     </SwiperSlide>
@@ -106,7 +115,7 @@ const Portfolio = () => {
                                 <i className='bx bxs-notepad icon__project'></i> AGENDA EN PYTHON
                                 </h3>
                                 <p className="portfolio__project-description">
-                                    DESCRIPCION CONTENEDOR 3
+                                Con esta aplicación podremos tener una agenda completamente funcional en la que agregar, editar o eliminar contactos, además de poder visualizar todos sus datos a través de una interfaz gráfica o a través de sus archivos txt correspondientes.
                                 </p>
                                 <a href="https://github.com/Rous-99/agenda-contactos"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>

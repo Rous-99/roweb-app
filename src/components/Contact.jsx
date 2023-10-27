@@ -64,7 +64,7 @@ const Contact = (props) => {
                         <i className="uil uil-envelope contact__icon"></i>
                         <div>
                             <h3 className="contact__title">Email</h3>
-                            <span className="contact__subtitle">rowebdesign99@gmail.com ¿ </span>
+                            <span className="contact__subtitle">rowebdesign99@gmail.com</span>
                         </div>
                     </div>
 
