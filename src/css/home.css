@@ -5,7 +5,7 @@
 }
 
 .home__img{
-    background: url(../assets/img/avatar.jpg);
+    background: url(../../avatar.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -12,7 +12,7 @@ importScripts(
 
 const { NetworkOnly } = workbox.strategies;
 const { setDefaultHandler } = workbox.routing;
-const { offlineFallback, staticResourceCache } = workbox.recipes; //este ultimo es para que todo el css y js se guarde en el cache
+const { offlineFallback, staticResourceCache, imageCache } = workbox.recipes; //este ultimo es para que todo el css y js se guarde en el cache
 const { precacheAndRoute } = workbox.precaching;
 
 setDefaultHandler(
@@ -23,6 +23,7 @@ setDefaultHandler(
 staticResourceCache(); //con esto ya tenemos todo el js y el css en el cache
 
 precacheAndRoute([
-    { url: '/index.html', revision: true } //ver si toda la app puede funcionar sin internet
+    { url: '/index.html', revision: true }, //ver si toda la app puede funcionar sin internet
 ])
 
+imageCache();
