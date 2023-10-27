@@ -95,7 +95,7 @@ const Contact = (props) => {
                         <button type="submit" className="button button--flex contact__button">Enviar mensaje <i className="uil uil-message button__icon"></i></button>
                     </div>
                     <div className={message ? "message__active": "message__hidden"}>
-                        <p><i className="uil uil-check-circle"></i> Mensaje enviado con éxito</p>
+                        <p className="message__sent"><i className="uil uil-check-circle"></i> Mensaje enviado con éxito</p>
                     </div>
                 </form>
                 
