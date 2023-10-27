@@ -25,15 +25,6 @@
   --text-color: black;
   --input-color: #ffe6e1; 
  
-
-  /*DARK COLORS*/
-  
-  /* --container-color: #282828;
-  --title-color:#fff;
-  --text-color:rgb(190, 190, 190);
-  --input-color:#4e4a49;
-  --body-color:#121212;  */
- 
   
   --header-height: 60px;
 
@@ -72,11 +63,6 @@
   --title-color-soft:#717171;
 }
 
-/* [data-theme='light']{
-  --container-color:#FFF;
-  --text-color: black;
-  --input-color: #ffe6e1; 
-} */
 
 /*===========================BASE=====================*/
 *{
@@ -152,42 +138,9 @@ img{
   text-align: center;
 }
 
-/* DARK THEME
-body.dark__theme{ */
-
-  /*COLORS*/
-  /* --hue-color:340; */
-
-  /* --first-color:hsl(var(var(--hue-color)), 69%, 61%); */
-  /* --first-color:#e6aa9f;
-  --first-color-soft:#edbdb4;
-  --input-color: #ffe6e1; */
-  /* --first-color-second:hsl(var(var(--hue-color)), 69%, 61%); */
-  /* --first-color-alt:hsl(var(var(--hue-color)), 57%, 53%); */
-
-  /* --first-color-soft:hsl(var(--hue-color), 30%, 8%); */
-
-  /* --title-color: #282828;
-  --title-color-soft:#717171; */
-
-  /* --text-color:hsl(var(var(--hue-color)), 8%, 45%);
-  --text-color-light:hsl(var(var(--hue-color)), 8%, 65%);
-  --input-color:hsl(var(var(--hue-color)), 70%, 96%);
-  --body-color:hsl(var(var(--hue-color)), 60%, 99%);
-  --container-color:#FFF; */
-  
-  /* --body-color: hsl(0 0% 98%);
-  --text-color: hsl(0 0% 46%);
-  --title-color:#9c9994;
-  --title-color-dark:#29251c;
-  --pink:#e7ddd3;
-  --soft-grey:#c0c2bd;
-  --pink:#e6aa9f; */
-  /* --header-height: 60px; */
-/* } */
 
 
-.theme__button{ /*modificar la altura del bottom con breakpoints para ajustarlo*/
+.theme__button{ 
   position: fixed;
   bottom: 20px;
   right:15%;
@@ -206,7 +159,7 @@ body.dark__theme{ */
 }
 
 
-.change__theme:hover{ /*intentar añadir una animacion de que se rellene la luna y al clickar se quede rosa*/
+.change__theme:hover{ 
   color: var(--first-color-soft);
 }
 
@@ -222,24 +175,17 @@ body.dark__theme{ */
   .container{
     max-width: 300px;
     overflow: hidden;
-    /* background-color: aquamarine; */
     margin: 0 1rem;
   }
  
 }
 
-/*medium devices*/
-@media screen and (min-width:568px){
-  /* .section__title{
-    /* margin-bottom: 1.5rem; */
-  
-}
+
 
 @media screen and (min-width:768px){
   .container{
     margin: 10px auto;
-    /* min-width: 768px; */
-    /* background-color: #edbdb4; */
+   
   }
 
   body{

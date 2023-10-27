@@ -29,10 +29,7 @@ function App() {
 
   //cuando llamemos a la funcion para cambiar el tema vamos a crear una variable nueva, newTheme que va a ser igual al valor que el usuario tenga como preferencia. Si ese valor es light entonces cambiamos a dark el tema, sino lo cambiamos a light. Con setTheme pasamos ese nuevo valor para cambiar el tema.
 
-  //FUNCION ENVIAR FORM
-  // const addMessage = () => {
-  //   console.log('new task');
-  // }
+  
 
   return (
     <div className='app' data-theme={theme}>

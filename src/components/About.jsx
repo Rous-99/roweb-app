@@ -22,23 +22,7 @@ const About = () => {
         setTextoBoton('Descargar CV');
     }
         
-        // console.log("deberia cargar despues")
-//         let download= false;
-//         if(!value){ //si no esta autenticado el usuario
-//             signInWithPopup(auth, provider).then((data) => {
-//                 setValue(data.user.email)
-//                 localStorage.setItem("email", data.user.email)
-//                 download=true;
-// ç            })
-//             window.open(CV, '_blank');
-//         }else if(download==true){
-//             window.open(CV, '_blank');
-//         }else{ //si ya esta autenticado
-//             window.open(CV, '_blank');
-//         }
-        // const pdfUrl = 'https://drive.google.com/file/d/1Tk4Wni6nJRHQnNyeYESntUigrEGLxWuz/view?usp=sharing';
-        // window.open(pdfUrl, '_blank'); // Abre la URL en una nueva ventana o pestaña para descargar el PDF
-
+       
     useEffect(()=>{
         setValue(localStorage.getItem('email'));
     })

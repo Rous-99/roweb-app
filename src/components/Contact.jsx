@@ -1,28 +1,12 @@
 import React, {useState} from "react";
 import "../css/contact.css";
-// import Form from "./Form.jsx";
-// import { collection, addDoc } from "firebase/firestore";
-// import { db } from "../firebase/app";
+
 
 
 const Contact = (props) => {
 
     console.log(props);
-    // console.log(props.addMessage());
-
-    // const [form, sendForm] = useState("");
-
-    // const enviarForm = async (e) =>{
-    //     e.preventDefault();
-    //     try{
-    //         const docRef = await addDoc(collection(db, "mensajes"), {
-    //             form:form,
-    //         });
-    //         console.log("Documento escrito con la ID:", docRef.id);
-    //     }catch (e) {
-    //         console.error("Error adding document", e);
-    //     }
-    // }
+    
 
     const initialStateValues= {
         nombre:"",
