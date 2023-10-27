@@ -189,8 +189,8 @@ body.dark__theme{ */
 
 .theme__button{ /*modificar la altura del bottom con breakpoints para ajustarlo*/
   position: fixed;
-  bottom: 3%;
-  right:10%;
+  bottom: 20px;
+  right:15%;
   z-index: var(--z-fixed);
   border: none;
   width: 10%;
