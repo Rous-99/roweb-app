@@ -23,15 +23,15 @@ const Footer = () => {
                     </ul>
 
                     <div className="footer__socials">
-                        <a href="#" className="footer__social">
+                        <a href="https://github.com/Rous-99" className="footer__social" target="_blank"> 
                             <i className="uil uil-github"></i>
                         </a>
 
-                        <a href="#" className="footer__social">
+                        <a href="https://www.linkedin.com/in/rosario-bernal/" className="footer__social" target="_blank">
                             <i className="uil uil-linkedin"></i>
                         </a>
 
-                        <a href="#" className="footer__social">
+                        <a href="https://roweb-app.web.app" className="footer__social" target="_blank">
                             <i className="uil uil-globe"></i>
                         </a>
 
