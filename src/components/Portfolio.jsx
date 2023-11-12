@@ -71,7 +71,7 @@ const Portfolio = () => {
                                     Además, a través de un formulario podemos enviar nuestros datos y los del
                                     perro que deseamos adoptar.
                                 </p>
-                                <a href="https://rous-99.github.io/petlover/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
+                                <a href="https://rowebdesign.github.io/petlover/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>
                         </div>
 
@@ -93,7 +93,7 @@ const Portfolio = () => {
                                 <p className="portfolio__project-description">
                                     SeaSchool es una landing page sobre una escuela de vela en la que se pueden consultar las diferentes actividades que ofrecen, sus características, los precios, e incluso reservar para las clases a través de un formulario.
                                 </p>
-                                <a href="https://rous-99.github.io/pagina-surf/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
+                                <a href="https://rowebdesign.github.io/pagina-surf/index.html"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@ const Portfolio = () => {
                                 <p className="portfolio__project-description">
                                 Con esta aplicación podremos tener una agenda completamente funcional en la que agregar, editar o eliminar contactos, además de poder visualizar todos sus datos a través de una interfaz gráfica o a través de sus archivos txt correspondientes.
                                 </p>
-                                <a href="https://github.com/Rous-99/agenda-contactos"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
+                                <a href="https://github.com/rowebdesign/agenda-contactos"  className="button button--flex button--project" target="_blank">Ver proyecto<i className="uil uil-arrow-right button__icon"></i></a>
                             </div>
                         </div>
                 </Swiper>

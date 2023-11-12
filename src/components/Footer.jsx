@@ -23,7 +23,7 @@ const Footer = () => {
                     </ul>
 
                     <div className="footer__socials">
-                        <a href="https://github.com/Rous-99" className="footer__social" target="_blank"> 
+                        <a href="https://github.com/rowebdesign" className="footer__social" target="_blank"> 
                             <i className="uil uil-github"></i>
                         </a>
 
