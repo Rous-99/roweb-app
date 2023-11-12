@@ -5,14 +5,13 @@
 }
 
 .home__img{
-    background: url(../../avatar.jpg);
+    background: url(../../Avatar.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 200px;
     height: 200px;
     box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-    /* border-radius: 10rem; */
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
 

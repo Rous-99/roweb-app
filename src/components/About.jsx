@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../css/about.css";
 import  CV  from "../assets/CV.pdf";
-import AboutImg from "../../avatar.jpg";
+import AboutImg from "../../Avatar_square.jpeg";
 import {auth, provider} from "../../firebase.js";
 import {signInWithPopup} from "firebase/auth";
 import Done from "./Done.jsx";
