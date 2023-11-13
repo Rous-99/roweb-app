@@ -36,7 +36,13 @@ const About = () => {
             <div className="about__container container grid">
                 <img src={AboutImg} alt="Foto personal" className="about__img"/>
                 <div className="about__data">
-                    <p className="about__description">Cuento con el conocimiento, las ganas y las herramientas necesarias para crear páginas web y formar parte de proyectos</p>
+                    <p className="about__description">Soy una apasionada del desarrollo web con un firme deseo de
+                    aprendizaje y un amor por los retos.
+                    Comencé como autodidacta y la creación de páginas web ha sido
+                    un descubrimiento emocionante que ha revelado mi verdadera
+                    pasión.
+                    Tengo un profundo interés en el diseño UI y me encanta superar mis
+                    límites</p>
                     {value?<Done />:
                         <button className="button__cv" onClick={handleClick}>
                             <a className="button button__cv" download={CV}>{textoBoton} 
