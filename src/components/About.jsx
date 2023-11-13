@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "../css/about.css";
-import  CV  from "../assets/CV.pdf";
+import  CV  from "../assets/Rosario_Bernal_CV.pdf";
 import AboutImg from "../../Avatar_square.jpeg";
 import {auth, provider} from "../../firebase.js";
 import {signInWithPopup} from "firebase/auth";
